@@ -9,31 +9,10 @@
                 padding:0;
                 border: 0;
                 background-color: rgb(255, 82, 79 );
-                
-                
             }
            
-           
-
-           
-           
-
-            .back{
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                filter: blur(8px);
-            }
-
-            .bg_img{
-                background-image: url("code.jpeg");
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-                
-                -webkit-filter: blur(8px);
-            }
-
             
-          
+
             .center{
                 text-align: center;
                 z-index: 10;
@@ -41,11 +20,9 @@
             }
             h1, h2, ul, li{
                 color:white;
-                
             }
 
             p, body, section {
-                
                 margin:0;
                 padding:0;
                 border: 0;
@@ -53,7 +30,6 @@
 
             section{
                 background-color:white;
-                
                 margin:0;
                 padding: 2%;
             }
@@ -77,7 +53,6 @@
             nav{
                 text-align: center;
                 padding: 10px;
-                
             }
 
            
@@ -107,13 +82,11 @@
 
             footer{
                 color:white;
-                position: ;
                 padding-top: 2.5px;
                 padding-bottom: 2.5px;
                 clear:left;
                 width: 100%;
                 text-align: center;
-                
             }
             
             .white{
@@ -127,6 +100,16 @@
             }
             h2{
                 font-size: 20px;
+                
+            }
+
+            .red{
+                color: rgb(255, 82, 79); 
+            }
+            .gh{
+                height: 25px;
+                
+    
             }
         </style>
 
@@ -136,6 +119,9 @@
     <body>
         <header>
             <img class = 'img_2' src="code.jpeg" alt="background">
+            <a href = "https://github.com/msyed199343">
+            <img class='gh' src="GitHub_Logo_White.png"></a>
+
             <div class = 'center'>
                 <img  class = 'img_1' src="sm_burned.JPG" alt="syed">
                 <h1><strong>Syed Mohiuddin</strong></h1>
@@ -143,14 +129,15 @@
             </div>
             <nav class='navbar'>
                 <div class = 'white'> </div>
-                    <a class='active' href="home">Portfolio</a>
-                    <a href="news.asp">Resume</a>
-                    <a href="contact.asp">Contact</a>
-                    <a href="about.asp">About</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#bottom">Resume</a>
+                    <a href="#Contact">Contact</a>
+                    <a href="#About">About</a>
                
             </nav>
         </header>
         <section>
+            <h2 id = "Portfolio" class = 'red' name = "Portfolio"> Portfolio  </h2>
             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
             passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De
             Finibus Bonorum et Malorum for use in a type specimen book.
@@ -221,7 +208,7 @@
             </article>
 
             <footer>
-                <h3>Contact info</h3>
+                <h3 id="Contact">Contact info</h3>
                 <h4> (630)-802-8226</h4>
                 <h4> syedm199343@gmail.com</h4>
             </footer>
