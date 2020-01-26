@@ -8,7 +8,8 @@
                 margin:0;
                 padding:0;
                 border: 0;
-                background-color: silver;
+                background-color: rgba(128, 0, 0, 0.8);
+                
                 
             }
             /* body::after{
@@ -20,15 +21,33 @@
 
            
             header{
+                /* transition: 0.2s; */
                 
-                background-color: maroon;
-                opacity: 0.7;
+                /* position: fixed; */
+              
                
             }
+
+            .back{
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                filter: blur(8px);
+            }
+
+            .bg_img{
+                background-image: url("code.jpeg");
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                
+                -webkit-filter: blur(8px);
+            }
+
+            
           
             .center{
                 text-align: center;
-                
+                z-index: 10;
+                position: relative;
             }
             h1, h2, ul, li{
                 color:white;
@@ -43,13 +62,13 @@
             }
 
             section{
-                background-color:silver;
-                /* opacity: 0.7; */
+                background-color:white;
+                
                 margin:0;
-                padding:0;
+                padding: 2%;
             }
 
-             img{
+             .img_1{
                 height:150px;
                 border-radius: 50%;
                
@@ -62,25 +81,72 @@
 
             .navbar a:hover {
                 background-color: #000;
-                
+                font-size: xx-large;
             }   
 
             nav{
                 text-align: center;
+                padding-bottom: 15px;
             }
+
+            .active {
+                background-color: #4CAF50;
+            }
+
+            article{
+                float:left;
+                width: 25%;
+                margin: 1%;
+                padding: 2%;
+                height: 100%;
+                font-size: 2.8vmin;
+                color: white;
+                
+                
+            }
+
+            footer{
+                text-align: center;
+                
+            }
+
+            .img_2{
+                height: 350px;
+                width: 100%;
+                filter: blur(8px);
+                z-index: -1;
+                position: absolute;
+               opacity: 0.3;
+               
+            }
+
+            footer{
+                color:white;
+                position: ;
+                padding-top: 2.5px;
+                padding-bottom: 2.5px;
+                clear:left;
+                width: 100%;
+                
+                
+            }
+            
         </style>
+
+      
     </head>
 
     <body>
         <header>
+            <img class = 'img_2' src="code.jpeg" alt="background">
             <div class = 'center'>
-            <img src="sm.JPG" alt="syed">
-            <h1>Syed Mohiuddin</h1>
-            <h2>Full-Stack Web Developer</h2>
+                <img  class = 'img_1' src="sm_burned.JPG" alt="syed">
+                <h1>Syed Mohiuddin</h1>
+                <h2>Full-Stack Web Developer</h2>
             </div>
             <nav class='navbar'>
                 
-                    <a href="default.asp">Portfolio</a>
+                    <a class='active' href="home">Portfolio</a>
                     <a href="news.asp">Resume</a>
                     <a href="contact.asp">Contact</a>
                     <a href="about.asp">About</a>
@@ -119,6 +185,49 @@
                     Cicero's De
                     Finibus Bonorum et Malorum for use in a type specimen book.</p>
         </section>
+        <article>
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
+                passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
+                passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                Cicero's De
+                Finibus Bonorum et Malorum for use in a type specimen book.</p>
+
+            </article>
+            <article>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The
+                    passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                    Cicero's De
+                    Finibus Bonorum et Malorum for use in a type specimen book.
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The
+                    passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                    Cicero's De
+                    Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            
+            </article>
+            <article>
+                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The
+                    passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                    Cicero's De
+                    Finibus Bonorum et Malorum for use in a type specimen book.
+                    Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+                    The
+                    passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
+                    Cicero's De
+                    Finibus Bonorum et Malorum for use in a type specimen book.</p>
+            
+            </article>
+
+            <footer>
+                <h3>Contact info</h3>
+                <h4> (630)-802-8226</h4>
+                <h4> syedm199343@gmail.com</h4>
+            </footer>
     </body>
 </html>
    
