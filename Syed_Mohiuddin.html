@@ -9,6 +9,7 @@
                 padding:0;
                 border: 0;
                 background-color: rgb(255, 82, 79 );
+                
             }
            
             
@@ -30,9 +31,6 @@
 
             section{
                 background-color:white;
-                margin:0;
-                padding: 2%;
-                z-index: -1;
             }
 
              .img_1{
@@ -60,11 +58,10 @@
 
             article{
                 float:left;
-                width: 25%;
+                width: 26%;
                 margin: 1%;
-                padding: 2%;
+                 padding: 2%;
                 height: 2000px;
-                font-size: ;
                 color: white;
                 
                 
@@ -74,9 +71,8 @@
             .img_2{
                 height: 400px;
                 width: 100%;
-                filter: blur(8px);
+                filter: blur(6.5px);
                 z-index: -1;
-    
                 position: absolute;
                 opacity: 0.4;
                
@@ -116,31 +112,48 @@
             }
 
             .froogle{
-                height: 250px;
-                width: 500px;
-                float:left;
+                
+                width: 200px;
+                margin-top: 30px;
+                float: left;
+                /* text-align: center; */
+                
+                
             }
             .froogle_2{
-                 height: 250px;
-                width: 500px;
+                margin-top: 30px;
+                width: 200px;
                 float:right;
+                
             }
 
             section p{
-                padding: 50px;
-                padding-top: 75px;
-                align-items: center;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                background-color: tomato;
+                border-radius: 5px;
+                margin: 5%;
+                padding: 1%;
+                clear: auto;
                 
             }
 
             .color_div{
                 background-color: rgb(255, 82, 79);
-                height: 5px;
+                height: 10px;
                 width: 100%;
-                margin:5px;
-
+                
                
             }
+           
+       
+            .down{
+                bottom: 10px;
+            }
+           
+
+            
         </style>
 
       
@@ -169,7 +182,7 @@
         <section>
             <h2 id = "Portfolio" class = 'red' name = "Portfolio"> Portfolio  </h2>
             <img class = 'froogle' src = "Froogle 2 copy.png">
-             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
+             <p class='right'> Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
             passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
             Cicero's De
             Finibus Bonorum et Malorum for use in a type specimen book.
@@ -179,7 +192,7 @@
             Finibus Bonorum et Malorum for use in a type specimen book.</p>
             <div class = 'color_div'></div>
             <img class='froogle_2' src="Froogle 2 copy.png">
-            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
+            <p class= 'left'>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
                 passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
                 Cicero's De
                 Finibus Bonorum et Malorum for use in a type specimen book.
@@ -189,7 +202,7 @@
                 Finibus Bonorum et Malorum for use in a type specimen book.</p>
                 <div class = 'color_div'></div>
                 <img class='froogle' src="Froogle 2 copy.png">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
+                <p class='down' >Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
                     passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
                     Cicero's De
                     Finibus Bonorum et Malorum for use in a type specimen book.
@@ -197,6 +210,7 @@
                     passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of
                     Cicero's De
                     Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                    
         </section>
         <article>
             <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The
